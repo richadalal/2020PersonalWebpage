@@ -41,7 +41,7 @@ h2 {
   font-style: normal;
   font-family: 'Trebuchet MS';
   color: #191970;
-    font-size: 40px;
+    font-size: 50px;
   text-align: center;
     width: 100%;
   padding: 0%;
@@ -248,9 +248,24 @@ body {
     width: 100%;
     display: block;
     margin-bottom: 20px;
+    font-size: 20px;
+    
+
 
   }
 }
+
+  
+    @media screen and (max-width: 900px) {
+  .column {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+    font-size: 20px;
+      }
+}
+
+    
 
 .card {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
@@ -258,6 +273,11 @@ body {
   width: 100%
   text-align: center;
   background-color: #f1f1f1;
+    border-collapse: collapse;
+  font-size: 20px;
+
+
+
 }
 
 
@@ -265,30 +285,59 @@ body {
   text-align: left;
   background-color: #FFF5EE;
   color: #708090
+    
 ;
-
-
 }
 
 
-* {
-  box-sizing: border-box;
+
+
+  table {
+  width:100%;
+    border-color: transparent;
+
+
 }
-
-.bye {
-  float: left;
-  width: 50%;
-  padding: 10px;
+table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
 }
-
-.hi:after {
-  content: "";
-  display: table;
-  clear: both;
-
+th, td {
+  padding: 15px;
+  text-align: left;
+}
+#t01 tr:nth-child(even) {
+  background-color: #eee;
+}
+#t01 tr:nth-child(odd) {
+ background-color: #fff;
+}
+#t01 th {
+  background-color: black;
+  color: white;
   
-.table {
-  background-color: #00000;
+}
+
+#genius th {
+  text-align: left;
+  background-color: #F0FFFF;
+  color: #9932CC
+
+
+;
+    font-family: Arial;
 }
 
 
+
+#blue td {
+  border-color: transparent;
+  text-align: left;
+  background-color: #f7f7f7;
+  color: #393939
+    
+
+
+;
+    font-family: Arial;
+}
